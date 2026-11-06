@@ -1,0 +1,327 @@
+body {
+    box-sizing: border-box;
+    background-color: #826B58;
+    padding: 2em;
+    border-radius: 2em;
+    margin: 0em;  
+    background-image:url("..images/background-image.png");
+    background-attachment: fixed;
+   }
+
+ .logo {
+    width: 10%;
+   }
+
+@font-face {
+    font-family: matcha;
+    src: url("..fonts/matcha.ttf");
+   }
+
+@font-face {
+    font-family: ltsaeada;
+    src: url("..fonts/ltsaeada.otf");
+   }
+
+ @font-face {
+    font-family: urbanheroes;
+    src: url("..fonts/urbanheroes.ttf");
+   }
+
+ @font-face {
+    font-family: omegle;
+    src: url("..fonts/omegle.ttf");
+   }
+
+header {
+    height: auto;
+    background-image:url("..images/art-design.png");
+    background-size: cover;
+    background-position: center;
+    padding: 10em;
+    margin: 2em;
+    border-radius: 1em;
+   }
+ 
+ p{
+    font-family:ltsaeada, sans-serif;
+   }
+ 
+ h1 {
+    font-family: urbanheroes, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    font-size:5em;
+   }
+
+ h2{
+    font-family: omegle, sans-serif;
+    color: whitesmoke;
+   }
+
+ h3{
+      font-family: omegle, sans-serif;
+      color: whitesmoke;
+   }
+
+main{
+    margin: 5em;
+    padding:0.5em;
+   }
+
+ .pagina2 main{
+    margin: 5em;
+   }
+
+   .tekst{
+      max-width: 800px;
+   }
+
+ul{
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+   gap: 20px;
+   justify-content: center;
+   list-style: none;
+   padding: 1em;
+   border-radius: 1em;
+   font-family: Matcha, sans-serif;
+}
+
+ /* Opgezocht met Copilot. Ik wilde een soort transparante kleur met een blur soort glass effect voor de knoppen. */
+a{
+    background-color: rgba(192, 185, 165, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 1em;
+    padding: 1.5em;
+    margin: 0.1em;
+    text-decoration: none;
+    color: #b86dea;
+    transition: 0.5s ease;
+   }
+
+a:hover{
+    background-color: #826B58;
+    color: white;
+    border-radius: 1em;
+    margin: 0.1em;
+    padding: 2em;
+    transform: scale(1.05);
+   }
+
+ .home .blok{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    align-items: flex-start;
+    margin-bottom: 8em;
+   }
+
+ .home article{
+    flex: 1;
+    max-width: 600px;
+   }
+
+ .home .placeholder{
+    background-color: #c09c93;
+    height: 300px;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+ .home .placeholder img{
+    border-radius: 1em;
+   }
+
+img{
+    width: 50%;
+   }
+
+header{
+  border-radius: 2em;
+  align-items: center;
+}
+
+ /* Opgezocht met Copilot. (border-bottom: 2px solid #d3b9a5;) Geeft een lijn onder de tussenkoppen, geeft een beetje Wikipedia vibes vind ik. */ 
+
+ .pagina2 h2 {
+    color: whitesmoke;
+    display: inline-block;
+    border-bottom: 2px solid #c09c93;
+    padding-bottom: 0.2em;
+   }
+
+.info-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    margin-bottom: 2em;
+   }
+
+.info-section:target{
+    box-shadow: 0 0 20px #c09c93;
+    transition: 1s ease;
+    border-radius: 1em;
+   }
+
+ .pagina2 .blok{
+    width: 300px;
+    height: 250px;
+    background-color: #c09c93;
+    border-radius: 20px;
+   }
+
+.sidebar{
+    background-color: rgba(211, 185, 165, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(1200px);
+    position: fixed;
+
+    /* Opgezocht met Copilot. Hoe ik de sidebar van binnen naar buiten laat schuiven, ook door middel van de hover.
+    En ook hoe je de sidebar buiten beeld hebt (vandaar die left -), en zelf heb ik gespeeld met de px. */
+    top: 0;
+    left: -220px;
+    width: 230px;
+    height: 90vh;
+    padding: 1em;
+    transition: 0.5s ease;
+    border-radius: 1em;
+   }
+
+.sidebar:hover{
+    left: 0;
+    border-radius: 2em;
+    margin: 0.1em;
+    padding: 0.7em;
+   }
+    
+.menutjes{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+   }
+
+ .menutjes a{
+    padding: 1em;
+    width: 80%;
+    text-align: center;
+    display: block;   
+   }
+
+footer {
+    margin-top: 3em;
+    width: 100%;
+   }
+
+ .home footer ul, .pagina3 footer ul{
+    justify-content: center;
+   }
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin-top: auto;
+    list-style: none;
+   } 
+
+.bronnen{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+   }
+
+.pagina3 a{
+    background-color: rgba(211, 185, 165, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 1em;
+    padding: 1.5em;
+    margin: 0.1em;
+    text-decoration: none;
+    color: #ba81e0;
+    transition: 0.5s ease;
+   }
+
+.pagina3 a:hover{
+    background-color: #826B58;
+    color: white;
+    border-radius: 1em;
+    margin: 0.1em;
+    padding: 2em;
+    transform: scale(1.05);
+   }
+
+.postits{
+    width: 350px;
+    margin: 1.5em;
+    padding: 1.5em;
+    background-color: #d3b9a5;
+    border-radius: 2em;
+    border-width: 1em;
+    border-style: solid;
+    border-color:#c09c93;
+    transition: transform 0.3s ease;
+   }
+
+/* Idee opgezocht met Copilot.
+Daarna zelf aangepast door met verschillende rotaties te spelen, zodat de "postits" er wat speelser uitzien/ */ 
+.postits:nth-child(1){
+    transform: rotate(-2deg);
+}
+.postits:nth-child(2){
+    transform: rotate(2deg);
+}
+.postits:nth-child(3){
+    transform: rotate(-1deg);
+}
+.postits:nth-child(4){
+    transform: rotate(1deg);
+}
+
+.postits:hover{
+    transform: rotate(3deg) scale(1.05);
+   }
+
+.centerpostits{
+    align-items: center;
+    width: 500px;
+    margin: 4em;
+    padding: 1.5em;
+    background-color: #d3b9a5;
+    border-radius: 2em;
+    transform: rotate(2deg);
+    border-width: 1em;
+    border-style: solid;
+    border-color:#c09c93;
+    transition: transform 0.3s ease;
+   }
+
+ .centerpostits:hover{
+    transform: rotate(3deg) scale(1.05);
+   }
+
+ .centerpostits ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   }
+
+ .centerpostits a{
+    padding: 1em;
+   }
+
+.Podcast, .boek, .Artikel, .Ontdek{
+    max-width: 80px;
+   }
+
+footer{
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+   }
